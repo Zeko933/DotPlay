@@ -62,3 +62,34 @@ ul .activ p {
 a {
 	text-decoration: none;
 }
+
+/* Searchbar */
+.searchbar {
+	margin-top: -826px;
+	margin-left: 1542px;
+	width: 300px;
+	height: 38px;
+	border: solid 1px;
+	border-radius: 25px;
+}
+
+/* Input de la Searchbar */
+input {
+	border: solid 1px white;
+	width: 250px;
+	margin-top: 6px;
+	margin-left: 25px;
+	outline-style: none;
+}
+
+/* IMAGE DE FOND */
+.bg {
+	width: 1650px;
+	height: 862px;
+	background-size: cover;
+	background-image: url(/img/maxresdefault.jpg);
+	margin-left: 227px;
+	margin-top: 11px;
+	filter: blur(4px);
+	opacity: 0.70;
+}
