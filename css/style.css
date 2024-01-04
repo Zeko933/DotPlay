@@ -7,6 +7,11 @@
 
 body {
 	overflow-x: hidden;
+	font-family: 'Playfair Display', serif;
+}
+
+br {
+	user-select: none;
 }
 
 .container {
@@ -15,7 +20,7 @@ body {
 }
 
 aside {
-	background-color: rgb(255, 255, 255);
+	background-color: hsla(0, 0%, 100%, 0.37);
 	border: solid 2px;
 	width: 250px;
 	height: 922px;
@@ -46,6 +51,11 @@ li {
 	width: 430px;
 	border: solid 1px;
 	font-size: px;
+}
+
+#logo:hover {
+	background-color: #3c4b5f;
+	transition: 0.5s;
 }
 
 .unactiv:hover {
@@ -148,6 +158,49 @@ input {
 	text-align: center;
 	color: #0c2a95;
 	align-items: center;
+}
+
+.custom_card_top {
+	margin-top: -830px;
+	margin-left: 22%;
+	height: 450px;
+	width: 1000px;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #0c2a95;
+	align-items: center;
+}
+
+.custom_card_top p {
+	width: 600px;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px white;
+	position: absolute;
+	bottom: 500px;
+	left: 480px;
+	background-color: rgba(
+		49,
+		49,
+		49,
+		0.4
+	); /* Ajustez l'opacité selon vos besoins */
+	border-radius: 30px;
+}
+
+.imgtop {
+	border: solid 1px;
+	border-radius: 10px;
+	width: 680px;
+	height: 320px;
+	background-image: url("/img/téléchargé.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-left: 160px;
+	margin-top: 32px;
+	filter: blur(1px);
+	opacity: 0.7;
 }
 
 .custom-card h2 {
@@ -259,13 +312,36 @@ input {
 	font-size: 30px;
 }
 
+.logo2 {
+	position: absolute;
+	width: 160px;
+	margin-left: 500px;
+	top: 887px;
+}
+
+.page-transition {
+	position: relative;
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0.8;
+		transform: translateY(2px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 footer {
 	background-image: url("../img/footer-background-011.jpg");
 	background-size: cover;
 	border: solid 1px;
-	width: 146%;
+	width: 147%;
 	height: 150px;
-	margin-left: -300px;
+	margin-left: -304px;
 	margin-top: 35px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -304,12 +380,31 @@ a button {
 	top: 15px;
 }
 
+[class^="custom-card"]:hover {
+	transition: 0.6s;
+	transform: scale(1.05);
+	border: solid 1px white;
+}
+
 .custom-card6 {
 	margin-left: 47px;
 }
 
 .custom-card7 {
 	margin-left: 47px;
+}
+
+.custom-card:hover {
+	background-color: #3c4b5f;
+	color: white;
+}
+
+.custom_card_top:hover {
+	transform: scale(1.05);
+	background-color: #3c4b5f;
+	color: white;
+	transition: 0.4s;
+	border: solid 1px white;
 }
 
 .custom-card8 {
@@ -352,4 +447,66 @@ a button {
 .rangee {
 	margin-left: 330px;
 	margin-right: -480px;
+}
+
+#game-card-group {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -350px;
+	margin-left: 250px;
+	position: relative;
+}
+
+.game-card {
+	margin-top: 20px;
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	padding: 15px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.foot-top {
+	margin-top: 25px;
+}
+
+.game-card:hover {
+	transform: scale(1.05);
+}
+
+.game-card h2 {
+	color: #0c2a95;
+}
+
+.game-card .game-image {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.game-card p {
+	font-size: 14px;
+	color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+}
+
+.game-card .read-more {
+	display: block;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #0c2a95;
+	font-weight: bold;
+}
+
+.game-card .read-more:hover {
+	text-decoration: underline;
 }
